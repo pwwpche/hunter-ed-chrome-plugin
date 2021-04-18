@@ -1,0 +1,17 @@
+{
+  "name": "Huntere-ed Clicker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Finish education lessons automatically (not exams)",
+  "content_scripts": [
+    {
+      "matches": ["https://www.hunter-ed.com/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
